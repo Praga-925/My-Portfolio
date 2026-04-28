@@ -1,0 +1,56 @@
+[
+  {
+    "id": "cert-hackday",
+    "title": "Hack$Day Participation Certificate",
+    "provider": "Sri Manakula Vinayagar Engineering College",
+    "description": "Participated in 48-hour Hack$Day event, showcasing skills in problem-solving, teamwork, and innovation.",
+    "status": "completed",
+    "image": "assets/certificates/HACK$DAY-certificate.png",
+    "pdf": ""
+  },
+  {
+    "id": "cert-ibm-ai-fundamentals",
+    "title": "IBM SkillsBuild Artificial Intelligence Fundamentals",
+    "provider": "IBM SkillsBuild",
+    "description": "Core concepts of AI, practical applications, and responsible AI fundamentals.",
+    "status": "completed",
+    "image": "",
+    "pdf": "assets/certificates/IBM SkillsBuild Artificial Intelligence Fundamentals.pdf"
+  },
+  {
+    "id": "cert-cisco-intro-cybersecurity",
+    "title": "Intro to Cybersecurity",
+    "provider": "Cisco",
+    "description": "Fundamentals of cyber threats, defense strategies, and cybersecurity best practices.",
+    "status": "completed",
+    "image": "",
+    "pdf": "assets/certificates/Intro to Cybersecurity - CISCO.pdf"
+  },
+  {
+    "id": "cert-infosys-genai",
+    "title": "Principles of Generative AI Certification",
+    "provider": "Infosys Springboard",
+    "description": "Generative AI foundations, use-cases, and model behavior awareness.",
+    "status": "completed",
+    "image": "",
+    "pdf": "assets/certificates/Principles of Generative AI Certification - Infosys Springboard.pdf"
+  },
+  {
+    "id": "cert-infosys-prompt",
+    "title": "Prompt Engineering",
+    "provider": "Infosys Springboard",
+    "description": "Prompt design techniques for obtaining reliable, structured, and useful AI outputs.",
+    "status": "completed",
+    "image": "",
+    "pdf": "assets/certificates/Prompt Enginneering - Infosys Springboard.pdf"
+  },
+  {
+    "id": "cert-ccna-intro-networks",
+    "title": "CCNA: Introduction to Networks",
+    "provider": "Cisco",
+    "description": "Networking basics, IP addressing, switching, routing, and network troubleshooting.",
+    "status": "completed",
+    "image": "",
+    "pdf": "assets/certificates/CCNA-_Introduction_to_Networks_certificate.pdf"
+  }
+]

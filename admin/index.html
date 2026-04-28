@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Admin</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="admin-shell">
+  <section class="admin-card" id="admin-login-panel">
+    <h1>Admin Access</h1>
+    <p>Log in to manage projects and certificates.</p>
+    <form id="admin-login-form" class="admin-form" novalidate>
+      <label for="admin-username">Username</label>
+      <input id="admin-username" name="username" type="text" autocomplete="username" required>
+
+      <label for="admin-password">Password</label>
+      <input id="admin-password" name="password" type="password" autocomplete="current-password" required>
+
+      <button type="submit">Login</button>
+      <div id="admin-login-error" class="status error"></div>
+    </form>
+  </section>
+
+  <section class="admin-card hidden" id="admin-dashboard">
+    <div class="admin-head">
+      <h2>Content Manager</h2>
+      <div class="admin-actions">
+        <a href="/" target="_blank" rel="noopener noreferrer">Open Portfolio</a>
+        <button type="button" id="admin-logout">Logout</button>
+      </div>
+    </div>
+
+    <div class="admin-grid">
+      <article class="panel">
+        <h3>Projects</h3>
+        <form id="project-form" class="admin-form" novalidate>
+          <input type="hidden" id="project-id" name="id">
+
+          <label for="project-title">Title</label>
+          <input id="project-title" name="title" type="text" required>
+
+          <label for="project-tag">Tag</label>
+          <input id="project-tag" name="tag" type="text" placeholder="Featured Project">
+
+          <label for="project-status">Status</label>
+          <select id="project-status" name="status">
+            <option value="featured">Featured</option>
+            <option value="coming-soon">Coming Soon</option>
+          </select>
+
+          <label for="project-command">Terminal Command</label>
+          <input id="project-command" name="command" type="text">
+
+          <label for="project-description">Description</label>
+          <textarea id="project-description" name="description" rows="4" required></textarea>
+
+          <label for="project-stack">Stack (comma separated)</label>
+          <input id="project-stack" name="stack" type="text">
+
+          <label for="project-features">Features (one per line)</label>
+          <textarea id="project-features" name="features" rows="4"></textarea>
+
+          <label for="project-link">GitHub Link</label>
+          <input id="project-link" name="link" type="url" placeholder="https://github.com/...">
+
+          <div class="form-actions">
+            <button type="submit">Save Project</button>
+            <button type="button" id="project-reset" class="secondary">Clear</button>
+          </div>
+
+          <div id="project-form-status" class="status"></div>
+        </form>
+
+        <ul id="project-list" class="item-list"></ul>
+      </article>
+
+      <article class="panel">
+        <h3>Certificates</h3>
+        <form id="certificate-form" class="admin-form" novalidate>
+          <input type="hidden" id="certificate-id" name="id">
+
+          <label for="certificate-title">Title</label>
+          <input id="certificate-title" name="title" type="text" required>
+
+          <label for="certificate-provider">Provider</label>
+          <input id="certificate-provider" name="provider" type="text" required>
+
+          <label for="certificate-status">Status</label>
+          <select id="certificate-status" name="status">
+            <option value="completed">Completed</option>
+            <option value="in-progress">In Progress</option>
+          </select>
+
+          <label for="certificate-description">Description</label>
+          <textarea id="certificate-description" name="description" rows="4"></textarea>
+
+          <label for="certificate-image">Image Path (optional)</label>
+          <input id="certificate-image" name="image" type="text" placeholder="Certifications/example.png">
+
+          <label for="certificate-pdf">PDF Path (optional)</label>
+          <input id="certificate-pdf" name="pdf" type="text" placeholder="Certifications/example.pdf">
+
+          <div class="form-actions">
+            <button type="submit">Save Certificate</button>
+            <button type="button" id="certificate-reset" class="secondary">Clear</button>
+          </div>
+
+          <div id="certificate-form-status" class="status"></div>
+        </form>
+
+        <ul id="certificate-list" class="item-list"></ul>
+      </article>
+    </div>
+  </section>
+</main>
+
+<script type="module" src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pragatishvar A | Cybersecurity Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="matrix"></canvas>
+<div class="grid-overlay"></div>
+<div id="cursor"></div>
+<div id="cursor-trail"></div>
+<div id="cursor-particles" aria-hidden="true"></div>
+
+<nav>
+  <div class="nav-logo"><span>~/</span>pragatishvar<span>_</span></div>
+  <div class="nav-links">
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<main>
+  <section id="hero">
+    <div class="hero-tag">// Security Engineer Portfolio</div>
+    <h1 class="hero-name"><span class="typed" id="hero-name-typed"></span></h1>
+    <p class="hero-tagline"><span class="prompt">></span><span class="typed" id="hero-tagline-typed"></span></p>
+    <p class="hero-sub">ANRF-AISEHack2026 Finalist</p>
+    <div class="terminal-box kali-shell">
+      <span class="kali-scan" aria-hidden="true"></span>
+      <div class="t-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div></div>
+      <div class="kali-line"><span class="host">kali@portfolio</span><span class="sym">$</span><span class="cmd">./launch-profile.sh</span></div>
+      <div class="t-line"><span class="prompt">></span><span class="typed" id="line1"></span></div>
+      <div class="t-line"><span class="prompt">></span><span class="typed" id="line2"></span></div>
+      <div class="t-line"><span class="prompt">></span><span class="typed" id="line3"></span></div>
+    </div>
+    <div class="hero-btns">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-secondary">Contact Me</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-label">01 — About</div>
+      <h2 class="section-title glitch-text" data-text="Who Am I">Who Am I</h2>
+      <div class="about-terminal reveal kali-shell">
+        <span class="kali-scan" aria-hidden="true"></span>
+        <div class="t-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div></div>
+        <div class="kali-line"><span class="host">kali@about</span><span class="sym">$</span><span class="cmd">cat profile.txt</span></div>
+        <div class="t-line about-command"><span class="prompt">$</span> <span class="about-command-text">whoami</span></div>
+        <div class="about-text">I am a Computer Science student with a strong interest in cybersecurity, focusing on network security and ethical hacking.I have built an AI-based anomaly detection system to identify unusual user behavior and potential security threats.
+Currently, I am strengthening my foundation in networking through the Cisco CCNA track and exploring penetration testing concepts through hands-on learning.I am actively working towards building real-world cybersecurity solutions and improving my practical skills</div>
+        <div class="t-line about-command gap-top"><span class="prompt">$</span> <span class="about-command-text">status --current</span></div>
+        <div class="about-status">📍 3rd Year CS Student &nbsp;|&nbsp; 🔐 CTF Enthusiast &nbsp;|&nbsp; 🛡️ Ethical Hacker</div>
+      </div>
+      <div class="about-stats reveal">
+        <div class="stat-card"><div class="stat-val">3rd</div><div class="stat-label">Year CS Student</div></div>
+        <div class="stat-card"><div class="stat-val">2026</div><div class="stat-label">Hackathon Finalist</div></div>
+        <div class="stat-card"><div class="stat-val">CTF</div><div class="stat-label">Active Competitor</div></div>
+        <div class="stat-card"><div class="stat-val">AI</div><div class="stat-label">ML + Security</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-inner">
+      <div class="section-label">02 — Skills</div>
+      <h2 class="section-title glitch-text" data-text="Toolkit">Toolkit</h2>
+      <div class="skills-grid reveal">
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <div class="skill-name">Networking</div>
+          <div class="skill-cat">Fundamentals</div>
+          <div class="skill-tooltip">TCP/IP, DNS, HTTP, Protocols</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🐧</div>
+          <div class="skill-name">Linux</div>
+          <div class="skill-cat">Operating Systems</div>
+          <div class="skill-tooltip">CLI, File Systems, Permissions</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">💀</div>
+          <div class="skill-name">Kali Linux</div>
+          <div class="skill-cat">Penetration Testing</div>
+          <div class="skill-tooltip">Pentesting Environment & Tools</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🔍</div>
+          <div class="skill-name">Nmap</div>
+          <div class="skill-cat">Security Tools</div>
+          <div class="skill-tooltip">Network Scanning & Discovery</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">📡</div>
+          <div class="skill-name">Wireshark</div>
+          <div class="skill-cat">Security Tools</div>
+          <div class="skill-tooltip">Packet Analysis & Network Forensics</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🐍</div>
+          <div class="skill-name">Python</div>
+          <div class="skill-cat">Programming</div>
+          <div class="skill-tooltip">Automation, ML, Security Scripts</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-label">03 — Projects</div>
+      <h2 class="section-title glitch-text" data-text="Work">Work</h2>
+      <div class="projects-grid" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <div class="section-inner">
+      <div class="section-label">04 — Certifications</div>
+      <h2 class="section-title glitch-text" data-text="Verified Certifications">Verified Certifications</h2>
+      <div id="certifications-grid" class="certifications-grid reveal"></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-inner">
+      <div class="section-label">05 — Contact</div>
+      <h2 class="section-title glitch-text" data-text="Get In Touch">Get In Touch</h2>
+      <div class="contact-layout reveal">
+        <div class="contact-info">
+          <h3>Let's connect.</h3>
+          <p>Open to cybersecurity opportunities, collaborations, and CTF team-ups. Feel free to reach out through any channel below.</p>
+          <div class="contact-cards">
+            <a href="https://github.com/Praga-925" class="contact-card" target="_blank" rel="noopener noreferrer">
+              <div class="contact-card-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </div>
+              <div class="contact-card-body">
+                <div class="contact-card-title">GitHub</div>
+                <div class="contact-card-subtext">github.com/Praga-925</div>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/pragatishvar-a-72b863325" class="contact-card" target="_blank" rel="noopener noreferrer">
+              <div class="contact-card-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </div>
+              <div class="contact-card-body">
+                <div class="contact-card-title">LinkedIn</div>
+                <div class="contact-card-subtext">linkedin.com/in/pragatishvar-a</div>
+              </div>
+            </a>
+            <button type="button" class="contact-card contact-card-email" data-email="praga.jv@gmail.com" aria-label="Open Gmail compose">
+              <div class="contact-card-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2v.217l8 5.333 8-5.333V7H4zm16 10V9.383l-7.445 4.963a2 2 0 0 1-2.11 0L3 9.383V17h17z"/></svg>
+              </div>
+              <div class="contact-card-body">
+                <div class="contact-card-title">Email</div>
+                <div class="contact-card-subtext">praga.jv@gmail.com</div>
+              </div>
+            </button>
+          </div>
+        </div>
+        <form id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="f-name">Name</label>
+            <input type="text" id="f-name" name="name" placeholder="Your name" maxlength="80" required>
+          </div>
+          <div class="form-group">
+            <label for="f-email">Email</label>
+            <input type="email" id="f-email" name="email" placeholder="your@email.com" maxlength="140" required>
+          </div>
+          <div class="form-group">
+            <label for="f-msg">Message</label>
+            <textarea id="f-msg" name="message" placeholder="What's on your mind?" maxlength="2000" required></textarea>
+          </div>
+          <button class="form-submit" id="form-submit" type="submit">Send Message_</button>
+          <div class="form-success" id="f-success" role="status" aria-live="polite">// Message sent. I'll be in touch soon.</div>
+          <div class="form-error" id="f-error" role="alert" aria-live="assertive"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="cert-modal" class="cert-modal" aria-hidden="true">
+  <div class="cert-modal-inner">
+    <button class="cert-modal-close" id="cert-modal-close" aria-label="Close">×</button>
+    <div class="cert-modal-title" id="cert-modal-title"></div>
+    <img id="cert-modal-image" alt="Certificate preview">
+  </div>
+</div>
+
+<footer>
+  <p>Designed & built by <span>Pragatishvar A</span> &nbsp;·&nbsp; <span>2026</span> &nbsp;·&nbsp; Cybersecurity Portfolio</p>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

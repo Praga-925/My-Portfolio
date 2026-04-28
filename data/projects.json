@@ -1,0 +1,28 @@
+[
+  {
+    "id": "proj-ai-monitoring",
+    "tag": "Featured Project",
+    "title": "AI Powered User Monitoring & Anomaly Detection",
+    "description": "A machine learning-based system that detects abnormal user behavior patterns using unsupervised learning algorithms to identify potential security threats in real-time.",
+    "stack": ["Python", "Isolation Forest", "Machine Learning", "Anomaly Detection"],
+    "features": [
+      "Identifies anomalies in user activity",
+      "Helps detect potential security threats",
+      "Unsupervised ML — no labeled data required"
+    ],
+    "link": "https://github.com/Praga-925/AI-Powered-User-Monitoring-Anomaly-Detection",
+    "status": "featured",
+    "command": "python monitor.py --mode anomaly"
+  },
+  {
+    "id": "proj-network-scanner",
+    "tag": "Coming Soon",
+    "title": "Network Vulnerability Scanner",
+    "description": "Automated tool for scanning network targets, identifying open ports and known CVEs. Currently in development.",
+    "stack": ["Python", "Nmap API", "CVE DB"],
+    "features": ["in progress..."],
+    "link": "",
+    "status": "coming-soon",
+    "command": "sudo nmap -sV --script vuln 10.10.x.x"
+  }
+]
