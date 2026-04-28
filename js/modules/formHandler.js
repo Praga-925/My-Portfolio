@@ -61,14 +61,30 @@ export function initFormHandler() {
     errorEl.style.display = 'none';
 
     try {
-      const response = await fetch('/api/contact', {
+      const isLocalhost = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+      const useNetlify = form.hasAttribute('data-netlify') && !isLocalhost;
+      const endpoint = useNetlify ? (form.getAttribute('action') || '/') : '/api/contact';
+      const headers = useNetlify
+        ? { 'Content-Type': 'application/x-www-form-urlencoded' }
+        : { 'Content-Type': 'application/json' };
+      const body = useNetlify
+        ? new URLSearchParams({
+          'form-name': form.getAttribute('name') || 'contact',
+          name,
+          email,
+          message
+        })
+        : JSON.stringify({ name, email, message });
+
+      const response = await fetch(endpoint, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email, message })
+        headers,
+        body
       });
 
-      const payload = await response.json();
       if (!response.ok) {
+        const contentType = response.headers.get('content-type') || '';
+        const payload = contentType.includes('application/json') ? await response.json() : null;
         setError(payload?.error || 'Unable to send message right now. Please try again later.');
         return;
       }

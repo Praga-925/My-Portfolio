@@ -168,7 +168,9 @@ Currently, I am strengthening my foundation in networking through the Cisco CCNA
             </button>
           </div>
         </div>
-        <form id="contact-form" novalidate>
+        <form id="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" novalidate>
+          <input type="hidden" name="form-name" value="contact">
+          <input type="hidden" name="bot-field" value="">
           <div class="form-group">
             <label for="f-name">Name</label>
             <input type="text" id="f-name" name="name" placeholder="Your name" maxlength="80" required>
