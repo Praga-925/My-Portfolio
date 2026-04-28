@@ -68,12 +68,14 @@ export function initFormHandler() {
         ? { 'Content-Type': 'application/x-www-form-urlencoded' }
         : { 'Content-Type': 'application/json' };
       const body = useNetlify
-        ? new URLSearchParams({
-          'form-name': form.getAttribute('name') || 'contact',
-          name,
-          email,
-          message
-        })
+        ? (() => {
+          const formData = new FormData(form);
+          formData.set('form-name', form.getAttribute('name') || 'contact');
+          formData.set('name', name);
+          formData.set('email', email);
+          formData.set('message', message);
+          return new URLSearchParams(formData).toString();
+        })()
         : JSON.stringify({ name, email, message });
 
       const response = await fetch(endpoint, {
